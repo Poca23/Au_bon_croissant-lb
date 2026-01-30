@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Boulangerie LB - Découvrez notre boulangerie artisanale et nos produits frais faits maison">
+    <meta name="keywords" content="boulangerie, pâtisserie, pain, artisan, frais">
+    <title>Boulangerie LB - Accueil</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Retour à l'accueil">
+                <img src="assets/images/logo.png" alt="Logo Boulangerie LB">
+            </a>
+
+            <!-- Navigation Desktop -->
+            <nav class="header__nav" aria-label="Navigation principale">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Présentation</a></li>
+                    <li><a href="produits.html" class="header__nav-link">Nos produits</a></li>
+                    <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__search" aria-label="Rechercher">
+                <span>🔍</span>
+            </button>
+
+            <!-- Burger Menu Button -->
+            <button class="header__burger" aria-label="Menu" aria-expanded="false">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MENU BURGER LATÉRAL -->
+    <aside class="burger-menu" aria-label="Menu mobile">
+        <button class="burger-menu__close" aria-label="Fermer le menu">&times;</button>
+        <nav class="burger-menu__nav">
+            <ul class="burger-menu__list">
+                <li><a href="index.html" class="burger-menu__link">Présentation</a></li>
+                <li><a href="produits.html" class="burger-menu__link">Nos produits</a></li>
+                <li><a href="contact.html" class="burger-menu__link">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="./assets/hero.jpg" alt="Boulangerie artisanale" class="hero__image">
+            <div class="hero__content">
+                <h1 class="hero__title">Au bon Croissant</h1>
+                <h2 class="hero__title">Boulangerie artisanale</h2>
+            </div>
+        </section>
+
+        <!-- Carrousel -->
+        <section class="carousel" aria-label="Galerie photos">
+            <div class="carousel__track">
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel1.jpg" alt="Pain frais" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel2.jpg" alt="Croissants" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel3.jpg" alt="Pâtisseries" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel4.jpg" alt="Baguettes" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel5.jpg" alt="Viennoiseries" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel6.jpg" alt="Tartes" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel7.jpg" alt="Gâteaux" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/carrousel/carrousel8.jpg" alt="Pain de campagne" class="carousel__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="about section">
+            <div class="container">
+                <h2 class="about__title">À propos de nous</h2>
+                <p class="about__text">
+                    Depuis plus de 20 ans, la Boulangerie LB perpétue la tradition artisanale du bon pain français.
+                    Chaque jour, nos boulangers pétrissent avec passion des produits frais et de qualité,
+                    élaborés à partir de farines sélectionnées et d'ingrédients naturels.
+                    Venez découvrir notre savoir-faire et nos créations gourmandes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Map -->
+        <section class="map-section section">
+            <div class="container">
+                <div class="map-section__content">
+                    <h2 class="map-section__title">Où nous trouver</h2>
+                    <p class="map-section__description">
+                        Venez nous rendre visite dans notre boutique située au cœur de la ville.
+                        Nous vous accueillons du lundi au samedi de 7h à 19h30.
+                    </p>
+                </div>
+                <div id="map" class="map-section__map"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <h2 class="cta__title">Une question ? Un événement ?</h2>
+                <p class="cta__text">
+                    Notre équipe est à votre écoute pour toute demande personnalisée :
+                    gâteaux d'anniversaire, plateaux pour vos événements, ou simplement pour en savoir plus sur nos
+                    produits.
+                </p>
+                <a href="contact.html" class="btn btn--primary">Nous contacter</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="assets/images/logo.png" alt="Logo Boulangerie LB">
+                </a>
+
+                <nav class="footer__nav" aria-label="Navigation footer">
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html" class="footer__nav-link">Accueil</a></li>
+                        <li><a href="produits.html" class="footer__nav-link">Produits</a></li>
+                        <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__socials">
+                    <a href="mailto:contact@boulangerie-lb.fr" class="footer__social-link" aria-label="Email">📧</a>
+                    <a href="tel:+33123456789" class="footer__social-link" aria-label="Téléphone">📞</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="footer__social-link"
+                        aria-label="Instagram">📷</a>
+                </div>
+            </div>
+
+            <hr class="footer__divider">
+
+            <p class="footer__legal">
+                &copy; 2024 Boulangerie LB - Tous droits réservés |
+                <a href="#" class="footer__legal-link">Mentions légales</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/burger.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

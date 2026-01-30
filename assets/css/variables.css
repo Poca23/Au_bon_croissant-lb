@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --color-bg: #f3efe2;
+  --color-primary-1: #60473e;
+  --color-primary-2: #75503c;
+  --color-primary-3: #8f7a59;
+  --color-gray-1: #1c1a18;
+  --color-gray-2: #312f2e;
+  --color-gray-3: #d6d5d4;
+  --color-white: #ffffff;
+
+  /* Font-family */
+  --font-family: "Poppins", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Font-size */
+  --font-size-h1: clamp(2rem, 5vw, 3rem);
+  --font-size-h2: clamp(1.5rem, 4vw, 2.25rem);
+  --font-size-h3: clamp(1.25rem, 3vw, 1.75rem);
+  --font-size-body: clamp(0.875rem, 2vw, 1rem);
+  --font-size-small: clamp(0.75rem, 1.5vw, 0.875rem);
+
+  /* Space */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-md);
+  --header-height: 80px;
+  --header-height-mobile: 60px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  /* Z-index */
+  --z-header: 100;
+  --z-burger-menu: 200;
+  --z-overlay: 150;
+}
