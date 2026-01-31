@@ -17,7 +17,7 @@
 }
 
 .header__logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -204,6 +204,7 @@
 .footer__legal {
   font-size: var(--font-size-small);
   color: var(--color-gray-2);
+  text-align: center;
 }
 
 .footer__legal-link {
