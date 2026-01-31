@@ -1,4 +1,4 @@
-# 🥐 Boulangerie LB - Site Vitrine
+# 🥐 Au Bon Croissant - Site Vitrine
 
 Projet d'intégration HTML/CSS/JS - Site vitrine pour une boulangerie locale.
 
@@ -29,8 +29,8 @@ Projet d'intégration HTML/CSS/JS - Site vitrine pour une boulangerie locale.
 
 ## 🔗 Liens
 
-- Figma : [Lien vers les maquettes]
-- GitHub : [Lien du repo]
+- Figma : [Voir le design sur Figma](https://www.figma.com/design/iJX0ngkH4jS06H5rIknVVR/Projet-1---Live-Campus?node-id=1-3&t=lJxKGRU1dkXV8PAr-1)
+- GitHub : [Repo GitHub du projet](https://github.com/Poca23/Au_bon_croissant-lb.git)
 
 ## 👤 Auteur
 
