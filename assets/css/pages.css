@@ -18,7 +18,7 @@
   position: absolute;
   bottom: var(--spacing-lg);
   left: var(--spacing-lg);
-  background-color: rgba(49, 47, 46, 0.7);
+  background-color: rgba(92, 88, 86, 0.7);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   padding: var(--spacing-md) var(--spacing-lg);
@@ -106,7 +106,7 @@
 }
 
 /* Section Map */
-.map-section {
+.map-section .container {
   display: grid;
   gap: var(--spacing-xl);
 }
@@ -129,20 +129,23 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
-  .map-section {
+  .map-section .container {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
   .map-section__content {
     text-align: left;
+    order: 2;
   }
 
   .map-section__map {
     height: 400px;
+    order: 1;
   }
 }
 
