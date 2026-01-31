@@ -16,6 +16,7 @@ boulangerie-lb/
 │ │ ├── carousel.js
 │ │ └── map.js
 │ ├── assets/
-│ │ └── logo.png (à remplacer par votre logo)
+│ │ ├── hero.jpg
+│ │ └── logo.webp
 ├── .gitignore
 └── README.md
